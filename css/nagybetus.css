@@ -28,7 +28,7 @@ body {
     flex-wrap: wrap;
 }
 
-aside {
+.aside {
     float: none;
     width: 90%;
     margin: 0 30px 20px 0;
@@ -38,7 +38,7 @@ aside {
     columns: 1;
 }
 
-figure {
+.figure {
     float: none;
     width: 150px;
     text-align: center;

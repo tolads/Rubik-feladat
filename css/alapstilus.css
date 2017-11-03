@@ -12,9 +12,9 @@ body {
     background-position: top left, bottom -95px left;
 }
 
-header,
-footer,
-main {
+.header,
+.footer,
+.main {
     background-color: #fff;
     width: 70%;
     min-width: 400px;
@@ -24,8 +24,8 @@ main {
     box-sizing: border-box;
 }
 
-header,
-footer {
+.header,
+.footer {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -51,7 +51,7 @@ h1 {
     padding-left: 10px;
     text-shadow: 3px 3px 3px #ccc;
 }
-header {
+.header {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;
@@ -138,13 +138,13 @@ header {
 #oldalmenu li:nth-child(4) .ikon {
     background-position-x: -180px;
 }
-footer {
+.footer {
     padding: 20px;
 }
-footer p {
+.footer p {
     text-align: center;
 }
-main {
+.main {
     padding: 30px;
 }
 h2 {
@@ -158,7 +158,7 @@ p {
     margin-bottom: 1em;
     line-height: 1.2;
 }
-aside {
+.aside {
     background-color: #FDD295;
     border-radius: 5px;
     padding: 5px;
@@ -179,26 +179,26 @@ q::before {
 q::after {
     content: "”";
 }
-aside p {
+.aside p {
     text-align: right;
     margin-top: 10px;
     font-weight: bold;
     font-style: italic;
 }
 
-article {
+.article {
     border-bottom: 1px dotted #000;
 }
-article:last-of-type {
+#dijak {
     border-bottom: none;
 }
-article + nav {
+.article + .nav {
     text-align: right;
 }
-article + nav a {
+.article + .nav a {
     text-decoration: none;
 }
-article:not(:first-child) {
+.article:not(:first-child) {
     margin-top: 20px;
 }
 #kirakas h2 {
@@ -206,7 +206,7 @@ article:not(:first-child) {
     margin-right: 18px;
     margin-bottom: 18px;
 }
-figure {
+.figure {
     background-color: #FDD295;
     border-radius: 10px;
     border: 1px solid #888;
@@ -216,10 +216,10 @@ figure {
     margin-right: auto;
     margin-left: auto;
 }
-figure img {
+.figure img {
     border: 1px solid #888;
 }
-figcaption {
+.figcaption {
     text-align: center;
 }
 
@@ -234,34 +234,34 @@ figcaption {
 }
 
 /* kepek */
-figure {
+.figure {
     transition: .5s all;
 }
-figure:hover {
+.figure:hover {
     position: relative;
     z-index: 1;
     border: 2px solid #d57d02;
     background-color: #fff;
 }
-figure:hover img {
+.figure:hover img {
     border-color: transparent;
 }
 
-figure:nth-of-type(1) {
+.figure:nth-of-type(1) {
     transition-delay: 300ms;
 }
-figure:nth-of-type(1):hover {
+.figure:nth-of-type(1):hover {
     transform: rotate3d(0, 1, 0, .5turn); /* az elso 3 parameter a forgatas tengelyet adja meg */
 }
 
-figure:nth-of-type(2) {
+.figure:nth-of-type(2) {
     transform: rotate(-7deg) translateY(-15px); /* jobbrol balra sorrendben hajtodnak vegre */
 }
-figure:nth-of-type(2):hover {
+.figure:nth-of-type(2):hover {
     transform: rotate(-7deg) translateY(-15px) skewX(-10deg);
 }
 
-figure:nth-of-type(3) {
+.figure:nth-of-type(3) {
     transform: rotate(7deg) translateY(-25px);
 }
 @keyframes pulse {
@@ -272,12 +272,12 @@ figure:nth-of-type(3) {
         transform: rotate(7deg) translateY(-25px) scale(1.1);
     }
 }
-figure:nth-of-type(3):hover {
+.figure:nth-of-type(3):hover {
     animation: pulse 500ms;
     animation-iteration-count: infinite;
 }
 
-figure:nth-of-type(4) {
+.figure:nth-of-type(4) {
     transform: rotate(-10deg) translateY(-30px);
 }
 @keyframes move {
@@ -288,7 +288,7 @@ figure:nth-of-type(4) {
         transform: translateX(60px) rotate(-10deg) translateY(-30px);
     }
 }
-figure:nth-of-type(4):hover {
+.figure:nth-of-type(4):hover {
     animation: move 2s;
 }
 
@@ -321,10 +321,10 @@ th {
         margin-right: 10px;
     }
 
-    article {
+    .article {
         overflow: hidden; /* overflow: visible azaz alapbeallitas eseten a benne levo float-olt elem magassaga nem szamit bele a szulo elem magassagaba */
     }
-    aside {
+    .aside {
         float: right;
         width: 250px;
         margin: 0 10px 30px 20px;
@@ -338,7 +338,7 @@ th {
     #valtozatai p {
         margin-bottom: 2em;
     }
-    figure {
+    .figure {
         float: left;
     }
 
@@ -355,15 +355,15 @@ th {
         margin: 3cm;
     }
 
-    header,
-    main,
-    footer {
+    .header,
+    .main,
+    .footer {
         min-width: auto;
         max-width: auto;
         width: 100%;
     }
 
-    nav {
+    .nav {
         display: none;
     }
 
